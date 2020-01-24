@@ -1,0 +1,39 @@
+function Factorial(n: Word): integer;
+begin
+    if n > 1 then
+        Factorial:=n*Factorial(n-1)
+    else
+        Factorial:=1;
+end;
+O(n!)
+
+procedure DoubleRecursive(N: integer);
+begin
+    if N>0 then
+        begin
+        DoubleRecursive(N-1);
+        DoubleRecursive(N-1);
+    end;
+end;
+O(n^2)
+
+for i:=1 to N do
+begin
+    max:=A[i,1];
+        for j:=1 to N do
+        begin
+            if A[i,j]>max then
+            max:=A[i,j]
+        end;
+    writeln(max);
+end;
+O(n^2)
+
+
+public static void main(String[] args) {
+   LinkedList<Integer> numbers = new LinkedList<>();
+   numbers.add(0, 20202);
+   numbers.add(0, 123);
+   numbers.add(0, 8283);
+}
+O(1);
